@@ -421,8 +421,7 @@ function App() {
   name="contact"
   method="POST"
   data-netlify="true"
-  netlify-honeypot="bot-field"
-  action="/success"
+  action="/success.html"
   className="contact-form"
 >
       <input
