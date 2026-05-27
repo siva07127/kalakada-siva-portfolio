@@ -44,14 +44,13 @@ function App() {
 
           <div className="hero-buttons">
 
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="btn primary-btn"
-            >
-              Download Resume
-            </a>
+          <a
+  href="/resume/Siva_Resume.pdf"
+  download
+  className="btn primary-btn"
+>
+  Download Resume
+</a>
 
             <a
               href="#contact"

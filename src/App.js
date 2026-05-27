@@ -45,13 +45,12 @@ function App() {
           <div className="hero-buttons">
 
             <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="btn primary-btn"
-            >
-              Download Resume
-            </a>
+  href="/resume/Siva_Resume.pdf"
+  download
+  className="btn primary-btn"
+>
+  Download Resume
+</a>
 
             <a
               href="#contact"
@@ -211,6 +210,113 @@ function App() {
 
       </section>
 
+      {/* EDUCATION */}
+
+<section className="education-section" id="education">
+
+  <h1 className="section-title">
+    EDUCATION
+  </h1>
+
+  <div className="education-container">
+
+    {/* CLASS X */}
+
+    <div className="education-card">
+
+      <img
+        src="/images/ap.png"
+        alt="AP School"
+        className="education-logo"
+      />
+
+      <h2>Class X</h2>
+
+      <h3>
+        AP Model School, Andhra Pradesh
+      </h3>
+
+      <p>GPA: 9.2</p>
+
+    </div>
+
+    {/* CLASS XII */}
+
+    <div className="education-card">
+
+      <img
+        src="/images/ap.png"
+        alt="AP School"
+        className="education-logo"
+      />
+
+      <h2>Class XII (BIPC)</h2>
+
+      <h3>
+        AP Model School, Andhra Pradesh
+      </h3>
+
+      <p>Percentage: 87%</p>
+
+    </div>
+
+    {/* BCA */}
+
+    <div className="education-card">
+
+      <img
+        src="/images/bnu.png"
+        alt="BNU"
+        className="education-logo"
+      />
+
+      <h2>
+        Bachelor of Computer Applications (BCA)
+      </h2>
+
+      <h3>
+        Patel Institute of Science and Management,
+        Bengaluru North University
+      </h3>
+
+      <p>
+        Sep 2022 – May 2025
+      </p>
+
+      <p>
+        GPA: 8.77
+      </p>
+
+    </div>
+
+    {/* MCA */}
+
+    <div className="education-card">
+
+      <img
+        src="/images/gitam.png"
+        alt="GITAM"
+        className="education-logo"
+      />
+
+      <h2>
+        Master of Computer Applications (MCA) – Pursuing
+      </h2>
+
+      <h3>
+        GITAM University, Visakhapatnam
+      </h3>
+
+      <p>
+        Year: 2025 – Present
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
       {/* PROJECTS */}
 
       <section className="projects-section" id="projects">
@@ -303,32 +409,77 @@ function App() {
 
       {/* CONTACT */}
 
-      <section className="contact-section" id="contact">
+<section className="contact-section" id="contact">
 
-        <h1 className="section-title">
-          CONTACT ME
-        </h1>
+  <h1 className="section-title">
+    CONTACT ME
+  </h1>
 
-        <div className="contact-grid">
+  <div className="contact-container">
 
-          <div className="contact-card">
-            <h2>Email</h2>
-            <p>sivakumar29093@gmail.com</p>
-          </div>
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      className="contact-form"
+    >
 
-          <div className="contact-card">
-            <h2>Phone</h2>
-            <p>+91 9347130879</p>
-          </div>
+      <input
+        type="hidden"
+        name="form-name"
+        value="contact"
+      />
 
-          <div className="contact-card">
-            <h2>Location</h2>
-            <p>Andhra Pradesh, India</p>
-          </div>
+      <h2>Contact Form</h2>
+      <div className="contact-details-box">
 
-        </div>
+  <p>
+    📞 +91 9347130879
+  </p>
 
-      </section>
+  <p>
+    📧 sivakumar29093@gmail.com
+  </p>
+
+</div>
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Full Name"
+        required
+      />
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Your Email ID"
+        required
+      />
+
+      <input
+        type="text"
+        name="subject"
+        placeholder="Your Subject"
+        required
+      />
+
+      <textarea
+        name="message"
+        rows="6"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <button type="submit">
+        Send Message
+      </button>
+
+    </form>
+
+  </div>
+
+</section>  
 
       {/* FOOTER */}
 
