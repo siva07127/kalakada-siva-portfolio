@@ -1,2 +1,2 @@
 node_modules
-buildgit rm -r --cached build
+build
